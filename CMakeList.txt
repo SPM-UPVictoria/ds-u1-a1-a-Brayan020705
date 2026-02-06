@@ -1,0 +1,15 @@
+# Versión mínima de CMake requerida
+cmake_minimum_required(VERSION 3.10)
+
+# Nombre del proyecto
+project(GestionCalificaciones)
+
+# Establecer el estándar de C++ a C++11 o superior
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+# Incluir el directorio de encabezados
+include_directories(${PROJECT_SOURCE_DIR}/src)
+
+# Crear el ejecutable
+add_executable(gradebook src/main.cpp)
